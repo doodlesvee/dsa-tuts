@@ -2,8 +2,7 @@ export function binary_search(list, target) {
   let left = 0;
   let right = list.length - 1;
 
- while (left <= right) {
-    console.log('hello')
+  while (left <= right) {
     const mid = Math.floor((left + right) / 2);
 
     if (list[mid] === target) return mid;
@@ -15,5 +14,5 @@ export function binary_search(list, target) {
     }
   }
 
-  return -1
+  return -1;
 }
